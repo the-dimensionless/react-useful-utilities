@@ -13,7 +13,7 @@ const AutoCompleteRxJs = () => {
   );
 
   useEffect(() => {
-    console.log("Component Mounted");
+    console.log("Throttling RxJs Mounted");
     subscription.current = inputStream
       .pipe(throttleTime(100))
       .subscribe((value) => QueryCall(value));
